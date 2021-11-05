@@ -3,10 +3,8 @@ def isitemail(b):
         return True
     else:
         return False
-    
-    
-email=str(input("please enter your email"))
-if isitemail(email) == True:
-    print(email + " is is a valid e-mail thank you")
-else:
-    print(email + " isn't a valid e-mail sorry")
+email=input("please enter your email: ")
+while isitemail(email)==False:
+	print(email , " isn't a valid e-mail")
+	email=input("please enter a valid email: ")
+print(email , " is is a valid e-mail")
